@@ -1,0 +1,232 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean Drive - Nettoyage de Voiture Intérieur</title>
+    <style>
+        /* Styles généraux */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* Bleu clair pour le fond */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header, footer {
+            background-color: #007BFF; /* Bleu vif pour l'en-tête et le pied de page */
+            color: white;
+            text-align: center;
+            padding: 1.5em 0;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 60px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #0056b3; /* Bleu foncé pour les titres */
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.1em;
+            text-align: justify;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background: #e6f2ff; /* Bleu très clair pour les éléments de liste */
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        /* Menu */
+        .menu {
+            display: none;
+            position: absolute;
+            right: 10px;
+            top: 60px;
+            background-color: #007BFF; /* Bleu vif pour le menu */
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .menu a {
+            color: white;
+            display: block;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 1.1em;
+        }
+
+        .menu a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .hamburger {
+            cursor: pointer;
+            position: absolute;
+            right: 10px;
+            top: 20px;
+        }
+
+        .bar {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 4px 0;
+        }
+
+        /* Formulaire */
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        button {
+            background-color: #0056b3; /* Bleu foncé pour le bouton */
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #003f7f; /* Bleu plus foncé au survol */
+        }
+
+        /* Footer */
+        footer {
+            font-size: 0.9em;
+            padding: 20px 0;
+        }
+
+        /* Effet de survol pour les sections */
+        section:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Clean Drive - Nettoyage de Voiture Intérieur</h1>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="menu" id="menu">
+            <a href="#intro">Bienvenue</a>
+            <a href="#why-choose">Pourquoi choisir CleanDrive</a>
+            <a href="#services">Nos services</a>
+            <a href="#reservation">Prendre Rendez-vous</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </header>
+    <main>
+        <!-- Section Intro -->
+        <section id="intro">
+            <h2>Bienvenue chez CleanDrive – L'excellence du nettoyage automobile !</h2>
+            <p>
+                Chez CleanDrive, nous croyons qu'une voiture propre n'est pas seulement une question d'apparence, mais aussi de bien-être et de plaisir de conduite. Nous offrons des services de nettoyage intérieur de haute qualité pour redonner à votre véhicule son éclat d'origine. Que ce soit pour un nettoyage complet ou un entretien régulier, notre équipe est là pour vous.
+            </p>
+        </section>
+
+        <!-- Section Pourquoi choisir CleanDrive -->
+        <section id="why-choose">
+            <h2>Pourquoi choisir CleanDrive ?</h2>
+            <ul>
+                <li><strong>Soin professionnel :</strong> Nos experts utilisent des produits de haute qualité et des techniques éprouvées pour garantir un résultat impeccable.</li>
+                <li><strong>Rapide et efficace :</strong> Nous comprenons que votre temps est précieux. Nos services sont conçus pour être rapides sans compromettre la qualité.</li>
+                <li><strong>Adapté à vos besoins :</strong> Que vous ayez besoin d'un nettoyage complet ou d'un lavage express, nous avons une solution pour vous.</li>
+            </ul>
+        </section>
+
+        <!-- Section Services -->
+        <section id="services">
+            <h2>Nos services</h2>
+            <ul>
+                <li><strong>Nettoyage intérieur :</strong> Nous nettoyons en profondeur l'habitacle, les sièges, les tapis et les moquettes pour éliminer toutes les saletés et les odeurs.</li>
+                <li><strong>Abonnements exclusifs :</strong> Profitez de nos abonnements mensuels pour garder votre véhicule toujours propre et brillant.</li>
+                <li><strong>Nettoyage des vitres :</strong> Des vitres impeccables pour une visibilité optimale.</li>
+                <li><strong>Désinfection :</strong> Utilisation de produits désinfectants pour un intérieur sain et hygiénique.</li>
+            </ul>
+        </section>
+
+        <!-- Section Rendez-vous -->
+        <section id="reservation">
+            <div class="container">
+                <h2>Prendre Rendez-vous</h2>
+                <p>
+                    Prêt à redonner à votre voiture son éclat d'origine ? Remplissez le formulaire ci-dessous, et nous vous contacterons pour confirmer votre rendez-vous.
+                </p>
+                <form action="https://formspree.io/f/xpwqkzjp" method="POST">
+                    <input type="text" name="name" placeholder="Votre nom" required>
+                    <input type="email" name="email" placeholder="Votre email" required>
+                    <input type="tel" name="phone" placeholder="Votre téléphone" required>
+                    <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
+                    <button type="submit">Envoyer</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>
+                Pour toute question ou demande d'information, n'hésitez pas à nous contacter. Notre équipe est à votre disposition pour vous aider.
+            </p>
+            <p><strong>Email :</strong> contact@cleandrive.com</p>
+            <p><strong>Téléphone :</strong> +33 1 23 45 67 89</p>
+            <p><strong>Adresse :</strong> 123 Rue de l'Exemple, 75001 Paris, France</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Clean Drive. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
